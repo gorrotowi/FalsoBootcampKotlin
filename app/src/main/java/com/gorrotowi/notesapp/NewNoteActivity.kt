@@ -1,10 +1,9 @@
 package com.gorrotowi.notesapp
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class NewNoteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +11,10 @@ class NewNoteActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_new_note)
 
+        val btnSave = findViewById<Button>(R.id.btnSave)
+
+        btnSave.setOnClickListener {
+            finish()
+        }
     }
 }
