@@ -2,6 +2,7 @@ package com.gorrotowi.notesapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,5 +21,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, NewNoteActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("Title", "El title es ${NotesData.title}")
+        Log.d("Title", "El content es ${NotesData.content}")
     }
 }
