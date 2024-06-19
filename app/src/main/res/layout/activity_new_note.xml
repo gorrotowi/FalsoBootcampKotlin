@@ -9,11 +9,13 @@
     tools:context=".NewNoteActivity">
 
     <EditText
+        android:id="@+id/edtxtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Titulo de la nota" />
 
     <EditText
+        android:id="@+id/edtxtContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
