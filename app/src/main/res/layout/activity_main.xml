@@ -33,4 +33,19 @@
 
     <!--    Nuestra lista -->
 
+    <TextView
+        android:id="@+id/txtNoteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="No Title" />
+
+    <TextView
+        android:id="@+id/txtNoteContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="No Content" />
+
 </LinearLayout>
